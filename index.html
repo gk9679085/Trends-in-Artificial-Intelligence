@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring Global and Canadian AI Trends - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>AI Trends Explorer</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="global.html">Global Trends</a></li>
+                <li><a href="canada.html">Canada</a></li>
+                <li><a href="future.html">Future & Ethics</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Exploring Global and Canadian Trends in Artificial Intelligence</h1>
+            <p class="hero-subtitle">Present and Future Perspectives</p>
+            <div class="author-info">
+                <p>By Gurpreet Kaur - Student ID: 816321</p>
+            </div>
+            <button class="cta-button" onclick="playWelcomeSound()">Start Exploring</button>
+        </div>
+        <div class="hero-animation">
+            <div class="ai-brain"></div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="overview-section">
+            <div class="container">
+                <h2>Project Overview</h2>
+                <p>Welcome to an interactive exploration of Artificial Intelligence trends across the globe and specifically in Canada. This educational project examines the current state of AI development, emerging technologies, and future implications for society.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card" onclick="updateCounter(this, 50)">
+                        <h3 id="countries-count">0</h3>
+                        <p>Countries Leading AI Research</p>
+                    </div>
+                    <div class="stat-card" onclick="updateCounter(this, 2.6)">
+                        <h3>$<span id="investment-count">0</span>B</h3>
+                        <p>Global AI Investment (2024)</p>
+                    </div>
+                    <div class="stat-card" onclick="updateCounter(this, 85)">
+                        <h3 id="companies-count">0</h3>
+                        <p>% of Companies Using AI</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="introduction-section">
+            <div class="container">
+                <div class="intro-content">
+                    <div class="intro-text">
+                        <h2>What is Artificial Intelligence?</h2>
+                        <p>Artificial Intelligence represents the simulation of human intelligence in machines programmed to think, learn, and problem-solve. From machine learning algorithms to neural networks, AI encompasses various technologies transforming industries worldwide.</p>
+                        
+                        <div class="ai-types">
+                            <div class="ai-type-card">
+                                <h4>Machine Learning</h4>
+                                <p>Algorithms that improve through experience</p>
+                            </div>
+                            <div class="ai-type-card">
+                                <h4>Natural Language Processing</h4>
+                                <p>Understanding and generating human language</p>
+                            </div>
+                            <div class="ai-type-card">
+                                <h4>Computer Vision</h4>
+                                <p>Interpreting and analyzing visual information</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro-media">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/ad79nYk2keg" 
+                                title="Introduction to Artificial Intelligence" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="navigation-section">
+            <div class="container">
+                <h2>Explore Our Research</h2>
+                <div class="nav-cards">
+                    <div class="nav-card" onclick="navigateToPage('global.html')">
+                        <div class="card-icon">🌍</div>
+                        <h3>Global AI Trends</h3>
+                        <p>Discover how USA, China, and Europe are leading AI innovation</p>
+                        <button class="card-button">Explore Global Trends</button>
+                    </div>
+                    
+                    <div class="nav-card" onclick="navigateToPage('canada.html')">
+                        <div class="card-icon">🍁</div>
+                        <h3>Canada's AI Ecosystem</h3>
+                        <p>Learn about Canada's national AI strategy and key players</p>
+                        <button class="card-button">Discover Canada's AI</button>
+                    </div>
+                    
+                    <div class="nav-card" onclick="navigateToPage('future.html')">
+                        <div class="card-icon">🔮</div>
+                        <h3>Future & Ethics</h3>
+                        <p>Explore predictions and ethical considerations for AI's future</p>
+                        <button class="card-button">View Future Trends</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="interactive-section">
+            <div class="container">
+                <h2>AI Knowledge Quiz</h2>
+                <div class="quiz-container">
+                    <div id="quiz-question">
+                        <p>What does AI stand for?</p>
+                    </div>
+                    <div class="quiz-options">
+                        <button class="quiz-btn" onclick="checkAnswer(this, false)">Automated Intelligence</button>
+                        <button class="quiz-btn" onclick="checkAnswer(this, true)">Artificial Intelligence</button>
+                        <button class="quiz-btn" onclick="checkAnswer(this, false)">Advanced Integration</button>
+                    </div>
+                    <div id="quiz-result"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="world-map-section">
+            <div class="container">
+                <h2>Global AI Research Centers</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24176.251535935493!2d-74.0059728!3d40.7589574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square%2C%20New%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sca!4v1635959069032!5m2!1sen!2sca" 
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 AI Trends Explorer | Gurpreet Kaur - 816321 | Educational Project</p>
+            <div class="social-links">
+                <a href="#" onclick="playClickSound()">GitHub</a>
+                <a href="#" onclick="playClickSound()">LinkedIn</a>
+                <a href="#" onclick="playClickSound()">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

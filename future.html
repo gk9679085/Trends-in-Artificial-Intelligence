@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future & Ethics - AI Trends Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>AI Trends Explorer</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="global.html">Global Trends</a></li>
+                <li><a href="canada.html">Canada</a></li>
+                <li><a href="future.html" class="active">Future & Ethics</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header future-header">
+        <div class="container">
+            <h1>The Future of AI: Predictions and Ethics</h1>
+            <p>Exploring what the next decade holds for artificial intelligence and its impact on society</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="future-predictions">
+            <div class="container">
+                <h2>AI Predictions for the Next 10 Years</h2>
+                <div class="predictions-grid">
+                    <div class="prediction-card" onclick="showPredictionDetails('2025')">
+                        <div class="prediction-year">2025</div>
+                        <h3>Autonomous Vehicles Mainstream</h3>
+                        <p>Self-driving cars become common in major cities</p>
+                        <div class="probability">Probability: 75%</div>
+                    </div>
+                    
+                    <div class="prediction-card" onclick="showPredictionDetails('2027')">
+                        <div class="prediction-year">2027</div>
+                        <h3>AI Medical Diagnosis</h3>
+                        <p>AI systems match human doctors in diagnostic accuracy</p>
+                        <div class="probability">Probability: 85%</div>
+                    </div>
+                    
+                    <div class="prediction-card" onclick="showPredictionDetails('2030')">
+                        <div class="prediction-year">2030</div>
+                        <h3>General AI Emergence</h3>
+                        <p>First true AGI systems demonstrated</p>
+                        <div class="probability">Probability: 40%</div>
+                    </div>
+                    
+                    <div class="prediction-card" onclick="showPredictionDetails('2032')">
+                        <div class="prediction-year">2032</div>
+                        <h3>AI-Human Collaboration</h3>
+                        <p>Most knowledge workers collaborate with AI daily</p>
+                        <div class="probability">Probability: 90%</div>
+                    </div>
+                    
+                    <div class="prediction-card" onclick="showPredictionDetails('2035')">
+                        <div class="prediction-year">2035</div>
+                        <h3>Quantum-AI Integration</h3>
+                        <p>Quantum computing revolutionizes AI capabilities</p>
+                        <div class="probability">Probability: 60%</div>
+                    </div>
+                </div>
+                
+                <div id="prediction-details" class="prediction-details-panel">
+                    <div class="details-content">
+                        <h3 id="prediction-title">Select a prediction to explore</h3>
+                        <p id="prediction-description">Click on any prediction card to view detailed analysis.</p>
+                        <div id="prediction-implications" class="implications-list"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="technology-trends">
+            <div class="container">
+                <h2>Emerging AI Technologies</h2>
+                <div class="tech-showcase">
+                    <div class="tech-tabs">
+                        <button class="tech-tab active" onclick="showTech('multimodal')">Multimodal AI</button>
+                        <button class="tech-tab" onclick="showTech('neuromorphic')">Neuromorphic Computing</button>
+                        <button class="tech-tab" onclick="showTech('explainable')">Explainable AI</button>
+                        <button class="tech-tab" onclick="showTech('federated')">Federated Learning</button>
+                    </div>
+                    
+                    <div id="multimodal" class="tech-content active">
+                        <div class="tech-info">
+                            <h3>Multimodal AI</h3>
+                            <p>AI systems that can process and understand multiple types of data simultaneously - text, images, audio, and video - creating more human-like understanding and interaction capabilities.</p>
+                            <div class="tech-applications">
+                                <h4>Applications:</h4>
+                                <ul>
+                                    <li>Advanced chatbots with image understanding</li>
+                                    <li>Content creation across multiple formats</li>
+                                    <li>Enhanced accessibility tools</li>
+                                    <li>Immersive virtual assistants</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tech-media">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/qbIk7-JPB2c" 
+                                    title="Multimodal AI" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    
+                    <div id="neuromorphic" class="tech-content">
+                        <div class="tech-info">
+                            <h3>Neuromorphic Computing</h3>
+                            <p>Computing systems that mimic the neural structure and operation of the human brain, offering unprecedented efficiency and learning capabilities for AI applications.</p>
+                            <div class="tech-applications">
+                                <h4>Applications:</h4>
+                                <ul>
+                                    <li>Ultra-low power AI devices</li>
+                                    <li>Real-time sensory processing</li>
+                                    <li>Adaptive robotics systems</li>
+                                    <li>Brain-computer interfaces</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tech-media">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/J3qhHgBhqPE" 
+                                    title="Neuromorphic Computing" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    
+                    <div id="explainable" class="tech-content">
+                        <div class="tech-info">
+                            <h3>Explainable AI (XAI)</h3>
+                            <p>AI systems designed to provide clear, understandable explanations for their decisions and processes, crucial for building trust and meeting regulatory requirements.</p>
+                            <div class="tech-applications">
+                                <h4>Applications:</h4>
+                                <ul>
+                                    <li>Medical diagnosis systems</li>
+                                    <li>Financial risk assessment</li>
+                                    <li>Legal decision support</li>
+                                    <li>Autonomous vehicle decisions</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tech-media">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/nK2cRFVgAVY" 
+                                    title="Explainable AI" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    
+                    <div id="federated" class="tech-content">
+                        <div class="tech-info">
+                            <h3>Federated Learning</h3>
+                            <p>A distributed machine learning approach that trains algorithms across decentralized data sources without exchanging the actual data, preserving privacy while enabling collaborative learning.</p>
+                            <div class="tech-applications">
+                                <h4>Applications:</h4>
+                                <ul>
+                                    <li>Privacy-preserving healthcare research</li>
+                                    <li>Mobile device AI improvements</li>
+                                    <li>Cross-institutional collaboration</li>
+                                    <li>IoT device learning networks</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tech-media">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/MOcTGM_UteM" 
+                                    title="Federated Learning" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ethical-concerns">
+            <div class="container">
+                <h2>Ethical Challenges in AI Development</h2>
+                <div class="ethics-grid">
+                    <div class="ethics-card bias" onclick="showEthicsDetails('bias')">
+                        <div class="ethics-icon">⚖️</div>
+                        <h3>Algorithmic Bias</h3>
+                        <p>AI systems can perpetuate or amplify existing societal biases</p>
+                        <div class="severity high">High Priority</div>
+                    </div>
+                    
+                    <div class="ethics-card privacy" onclick="showEthicsDetails('privacy')">
+                        <div class="ethics-icon">🔒</div>
+                        <h3>Privacy Concerns</h3>
+                        <p>Personal data collection and surveillance capabilities</p>
+                        <div class="severity high">High Priority</div>
+                    </div>
+                    
+                    <div class="ethics-card employment" onclick="showEthicsDetails('employment')">
+                        <div class="ethics-icon">💼</div>
+                        <h3>Job Displacement</h3>
+                        <p>Automation threatening traditional employment</p>
+                        <div class="severity medium">Medium Priority</div>
+                    </div>
+                    
+                    <div class="ethics-card transparency" onclick="showEthicsDetails('transparency')">
+                        <div class="ethics-icon">👁️</div>
+                        <h3>Lack of Transparency</h3>
+                        <p>Black box algorithms with unexplained decisions</p>
+                        <div class="severity high">High Priority</div>
+                    </div>
+                    
+                    <div class="ethics-card accountability" onclick="showEthicsDetails('accountability')">
+                        <div class="ethics-icon">🎯</div>
+                        <h3>Accountability</h3>
+                        <p>Determining responsibility for AI decisions and actions</p>
+                        <div class="severity medium">Medium Priority</div>
+                    </div>
+                    
+                    <div class="ethics-card security" onclick="showEthicsDetails('security')">
+                        <div class="ethics-icon">🛡️</div>
+                        <h3>Security Risks</h3>
+                        <p>AI systems vulnerable to attacks and misuse</p>
+                        <div class="severity high">High Priority</div>
+                    </div>
+                </div>
+                
+                <div id="ethics-details" class="ethics-details-panel">
+                    <div class="ethics-content">
+                        <h3 id="ethics-title">Select an ethical concern to explore</h3>
+                        <p id="ethics-description">Click on any ethics card to view detailed information and potential solutions.</p>
+                        <div id="ethics-solutions" class="solutions-list"></div>
+                        <div id="ethics-examples" class="examples-list"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="regulation-landscape">
+            <div class="container">
+                <h2>Global AI Regulation Landscape</h2>
+                <div class="regulation-map">
+                    <div class="region-regulations">
+                        <div class="regulation-item eu">
+                            <div class="region-flag">🇪🇺</div>
+                            <div class="regulation-info">
+                                <h4>European Union - AI Act</h4>
+                                <p>Comprehensive risk-based regulation covering all AI applications</p>
+                                <div class="regulation-status implemented">Implemented 2024</div>
+                            </div>
+                        </div>
+                        
+                        <div class="regulation-item us">
+                            <div class="region-flag">🇺🇸</div>
+                            <div class="regulation-info">
+                                <h4>United States - Executive Orders</h4>
+                                <p>Federal guidelines and agency-specific regulations</p>
+                                <div class="regulation-status developing">In Development</div>
+                            </div>
+                        </div>
+                        
+                        <div class="regulation-item china">
+                            <div class="region-flag">🇨🇳</div>
+                            <div class="regulation-info">
+                                <h4>China - AI Provisions</h4>
+                                <p>Algorithm recommendation and deep synthesis regulations</p>
+                                <div class="regulation-status partial">Partially Implemented</div>
+                            </div>
+                        </div>
+                        
+                        <div class="regulation-item canada">
+                            <div class="region-flag">🇨🇦</div>
+                            <div class="regulation-info">
+                                <h4>Canada - Artificial Intelligence Act</h4>
+                                <p>Risk-based approach with focus on high-impact systems</p>
+                                <div class="regulation-status proposed">Proposed 2024</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="impact-assessment">
+            <div class="container">
+                <h2>AI Impact Assessment Tool</h2>
+                <div class="assessment-tool">
+                    <div class="assessment-form">
+                        <h3>Evaluate AI Impact in Different Sectors</h3>
+                        <div class="sector-selector">
+                            <label for="sector-select">Select Industry:</label>
+                            <select id="sector-select" onchange="updateImpactAssessment()">
+                                <option value="">Choose a sector...</option>
+                                <option value="healthcare">Healthcare</option>
+                                <option value="education">Education</option>
+                                <option value="finance">Finance</option>
+                                <option value="transportation">Transportation</option>
+                                <option value="manufacturing">Manufacturing</option>
+                            </select>
+                        </div>
+                        
+                        <div class="impact-factors">
+                            <div class="factor">
+                                <label>Job Impact:</label>
+                                <input type="range" id="job-impact" min="1" max="10" value="5" onchange="updateAssessment()">
+                                <span id="job-value">5</span>
+                            </div>
+                            <div class="factor">
+                                <label>Efficiency Gain:</label>
+                                <input type="range" id="efficiency-gain" min="1" max="10" value="5" onchange="updateAssessment()">
+                                <span id="efficiency-value">5</span>
+                            </div>
+                            <div class="factor">
+                                <label>Ethical Risk:</label>
+                                <input type="range" id="ethical-risk" min="1" max="10" value="5" onchange="updateAssessment()">
+                                <span id="ethical-value">5</span>
+                            </div>
+                        </div>
+                        
+                        <button onclick="generateAssessment()" class="assessment-btn">Generate Assessment</button>
+                    </div>
+                    
+                    <div id="assessment-results" class="assessment-results">
+                        <h4>Assessment Results</h4>
+                        <p>Select an industry and adjust the factors to see the AI impact assessment.</p>
+                        <div id="impact-visualization" class="impact-viz"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="future-scenarios">
+            <div class="container">
+                <h2>Future AI Scenarios</h2>
+                <div class="scenarios-container">
+                    <div class="scenario-tabs">
+                        <button class="scenario-tab active" onclick="showScenario('optimistic')">Optimistic Future</button>
+                        <button class="scenario-tab" onclick="showScenario('realistic')">Realistic Future</button>
+                        <button class="scenario-tab" onclick="showScenario('pessimistic')">Pessimistic Future</button>
+                    </div>
+                    
+                    <div id="optimistic" class="scenario-content active">
+                        <h3>🌟 Optimistic Scenario (2035)</h3>
+                        <div class="scenario-description">
+                            <p>AI becomes humanity's greatest collaborative partner, solving climate change, eliminating poverty, and extending human life significantly. Ethical frameworks ensure fair distribution of AI benefits.</p>
+                            <div class="scenario-features">
+                                <div class="feature">✅ Climate crisis solved through AI optimization</div>
+                                <div class="feature">✅ Universal basic income enabled by AI productivity</div>
+                                <div class="feature">✅ Personalized education for everyone</div>
+                                <div class="feature">✅ Disease eradication through AI drug discovery</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="realistic" class="scenario-content">
+                        <h3>⚖️ Realistic Scenario (2035)</h3>
+                        <div class="scenario-description">
+                            <p>AI development continues with mixed results. Significant benefits in healthcare and education, but also job displacement and increased inequality. Regulation struggles to keep pace.</p>
+                            <div class="scenario-features">
+                                <div class="feature mixed">📈 Major productivity gains in key sectors</div>
+                                <div class="feature mixed">⚠️ 15-20% job displacement, new roles emerge</div>
+                                <div class="feature mixed">🏥 Revolutionary healthcare improvements</div>
+                                <div class="feature mixed">📊 Persistent digital divide issues</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="pessimistic" class="scenario-content">
+                        <h3>⚠️ Pessimistic Scenario (2035)</h3>
+                        <div class="scenario-description">
+                            <p>Unchecked AI development leads to massive job displacement, increased surveillance, and concentration of power among tech giants. Regulatory efforts prove insufficient.</p>
+                            <div class="scenario-features">
+                                <div class="feature negative">❌ Mass unemployment without adequate support</div>
+                                <div class="feature negative">❌ Authoritarian surveillance systems widespread</div>
+                                <div class="feature negative">❌ AI bias amplifies social inequalities</div>
+                                <div class="feature negative">❌ Loss of human agency in decision-making</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="action-steps">
+            <div class="container">
+                <h2>Preparing for the AI Future</h2>
+                <div class="action-grid">
+                    <div class="action-card individuals">
+                        <h3>For Individuals</h3>
+                        <ul>
+                            <li>Develop AI literacy and understanding</li>
+                            <li>Focus on uniquely human skills</li>
+                            <li>Stay adaptable and embrace lifelong learning</li>
+                            <li>Engage in AI ethics discussions</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="action-card organizations">
+                        <h3>For Organizations</h3>
+                        <ul>
+                            <li>Implement responsible AI practices</li>
+                            <li>Invest in employee reskilling</li>
+                            <li>Establish AI ethics committees</li>
+                            <li>Ensure transparency in AI decision-making</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="action-card governments">
+                        <h3>For Governments</h3>
+                        <ul>
+                            <li>Develop comprehensive AI regulation</li>
+                            <li>Invest in education and retraining programs</li>
+                            <li>Support AI research and development</li>
+                            <li>Address inequality and access issues</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="final-quiz">
+            <div class="container">
+                <h2>Final Knowledge Assessment</h2>
+                <div class="final-quiz-container">
+                    <div id="final-quiz-content">
+                        <p id="final-question">What is the primary goal of Explainable AI?</p>
+                        <div class="quiz-options">
+                            <button class="quiz-btn" onclick="checkFinalAnswer(this, false)">Increase AI speed</button>
+                            <button class="quiz-btn" onclick="checkFinalAnswer(this, true)">Make AI decisions understandable</button>
+                            <button class="quiz-btn" onclick="checkFinalAnswer(this, false)">Reduce AI costs</button>
+                        </div>
+                        <div id="final-quiz-result"></div>
+                        <div id="quiz-progress">
+                            <div class="progress-bar">
+                                <div id="progress-fill" class="progress-fill"></div>
+                            </div>
+                            <span id="question-counter">Question 1 of 5</span>
+                        </div>
+                    </div>
+                    <div id="quiz-completion" class="quiz-completion" style="display:none;">
+                        <h3>🎉 Quiz Completed!</h3>
+                        <p>You scored <span id="final-score">0</span> out of 5</p>
+                        <button onclick="restartQuiz()" class="restart-btn">Take Again</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 AI Trends Explorer | Gurpreet Kaur - 816321 | Educational Project</p>
+            <div class="footer-nav">
+                <a href="canada.html">Previous: Canada</a>
+                <a href="index.html">Back to Home</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

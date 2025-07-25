@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global AI Trends - AI Trends Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>AI Trends Explorer</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="global.html" class="active">Global Trends</a></li>
+                <li><a href="canada.html">Canada</a></li>
+                <li><a href="future.html">Future & Ethics</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Global AI Trends: Leading Nations</h1>
+            <p>Examining how USA, China, and Europe are shaping the future of artificial intelligence</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="country-selector">
+            <div class="container">
+                <h2>Select a Region to Explore</h2>
+                <div class="country-buttons">
+                    <button class="country-btn active" onclick="showCountryInfo('usa')">🇺🇸 United States</button>
+                    <button class="country-btn" onclick="showCountryInfo('china')">🇨🇳 China</button>
+                    <button class="country-btn" onclick="showCountryInfo('europe')">🇪🇺 Europe</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="country-details">
+            <div class="container">
+                <div id="usa-info" class="country-info active">
+                    <div class="country-content">
+                        <div class="country-text">
+                            <h2>United States: AI Innovation Hub</h2>
+                            <p>The United States leads global AI development through Silicon Valley giants and substantial government investment. With companies like Google, Microsoft, and OpenAI, the US focuses on breakthrough research and commercial applications.</p>
+                            
+                            <div class="key-points">
+                                <h3>Key Developments:</h3>
+                                <ul>
+                                    <li>OpenAI's GPT models revolutionizing natural language processing</li>
+                                    <li>Google's advances in quantum computing and AI</li>
+                                    <li>Tesla's autonomous vehicle technology</li>
+                                    <li>NVIDIA's AI chip dominance</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="investment-info">
+                                <h4>Investment: $47.4 billion (2023)</h4>
+                                <div class="progress-bar">
+                                    <div class="progress-fill usa-progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="country-media">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/JMLsJJuCqTE" 
+                                    title="AI in Silicon Valley" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="china-info" class="country-info">
+                    <div class="country-content">
+                        <div class="country-text">
+                            <h2>China: AI Superpower</h2>
+                            <p>China has emerged as a major AI competitor through massive state investment and a comprehensive national strategy. Chinese companies lead in AI applications, particularly in facial recognition, mobile payments, and smart cities.</p>
+                            
+                            <div class="key-points">
+                                <h3>Key Developments:</h3>
+                                <ul>
+                                    <li>Baidu's autonomous driving program Apollo</li>
+                                    <li>Alibaba's smart city initiatives</li>
+                                    <li>Tencent's AI in gaming and social media</li>
+                                    <li>ByteDance's AI-powered content algorithms</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="investment-info">
+                                <h4>Investment: $13.4 billion (2023)</h4>
+                                <div class="progress-bar">
+                                    <div class="progress-fill china-progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="country-media">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/aI8KaWMJrI0" 
+                                    title="China's AI Development" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="europe-info" class="country-info">
+                    <div class="country-content">
+                        <div class="country-text">
+                            <h2>Europe: Ethical AI Leadership</h2>
+                            <p>Europe focuses on responsible AI development with strong emphasis on regulation, privacy, and ethical considerations. The EU AI Act represents the world's first comprehensive AI regulation framework.</p>
+                            
+                            <div class="key-points">
+                                <h3>Key Developments:</h3>
+                                <ul>
+                                    <li>EU AI Act - comprehensive AI regulation</li>
+                                    <li>GDPR influence on AI data practices</li>
+                                    <li>DeepMind's breakthrough research (UK)</li>
+                                    <li>France's AI national strategy</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="investment-info">
+                                <h4>Investment: $7.8 billion (2023)</h4>
+                                <div class="progress-bar">
+                                    <div class="progress-fill europe-progress"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="country-media">
+                            <iframe width="100%" height="250" src="https://www.youtube.com/embed/ICg5dvOIVkE" 
+                                    title="European AI Strategy" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="comparison-section">
+            <div class="container">
+                <h2>Global AI Comparison Dashboard</h2>
+                <div class="comparison-grid">
+                    <div class="metric-card">
+                        <h3>AI Patents Filed</h3>
+                        <canvas id="patentsChart" width="300" height="200"></canvas>
+                    </div>
+                    <div class="metric-card">
+                        <h3>AI Startups</h3>
+                        <div class="startup-bars">
+                            <div class="bar-item">
+                                <span>USA</span>
+                                <div class="bar">
+                                    <div class="bar-fill" style="width: 85%">4,500</div>
+                                </div>
+                            </div>
+                            <div class="bar-item">
+                                <span>China</span>
+                                <div class="bar">
+                                    <div class="bar-fill" style="width: 60%">1,200</div>
+                                </div>
+                            </div>
+                            <div class="bar-item">
+                                <span>Europe</span>
+                                <div class="bar">
+                                    <div class="bar-fill" style="width: 45%">800</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ai-timeline">
+            <div class="container">
+                <h2>Global AI Development Timeline</h2>
+                <div class="timeline">
+                    <div class="timeline-item" onclick="showTimelineDetails('2018')">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>2018</h4>
+                            <p>China releases AI development plan</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" onclick="showTimelineDetails('2020')">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>2020</h4>
+                            <p>GPT-3 launches, transforming NLP</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" onclick="showTimelineDetails('2022')">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>2022</h4>
+                            <p>ChatGPT goes viral worldwide</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" onclick="showTimelineDetails('2024')">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>2024</h4>
+                            <p>EU AI Act comes into effect</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="timeline-details" class="timeline-details"></div>
+            </div>
+        </section>
+
+        <section class="global-map">
+            <div class="container">
+                <h2>AI Research Centers Worldwide</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50833306.85452817!2d-128.6062684!3d37.42199425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb4571bd377ab%3A0x394d3fe1a3e4d392!2sStanford%20University!5e0!3m2!1sen!2sca!4v1635959069032!5m2!1sen!2sca" 
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <section class="interactive-quiz">
+            <div class="container">
+                <h2>Test Your Global AI Knowledge</h2>
+                <div class="quiz-container">
+                    <div id="global-quiz">
+                        <p>Which country leads in AI patent filings?</p>
+                        <div class="quiz-options">
+                            <button class="quiz-btn" onclick="checkGlobalAnswer(this, true)">China</button>
+                            <button class="quiz-btn" onclick="checkGlobalAnswer(this, false)">USA</button>
+                            <button class="quiz-btn" onclick="checkGlobalAnswer(this, false)">Japan</button>
+                        </div>
+                        <div id="global-quiz-result"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 AI Trends Explorer | Gurpreet Kaur - 816321 | Educational Project</p>
+            <div class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="canada.html">Next: Canada</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

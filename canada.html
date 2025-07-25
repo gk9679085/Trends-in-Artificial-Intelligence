@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canada's AI Ecosystem - AI Trends Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>AI Trends Explorer</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="global.html">Global Trends</a></li>
+                <li><a href="canada.html" class="active">Canada</a></li>
+                <li><a href="future.html">Future & Ethics</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header canada-header">
+        <div class="container">
+            <h1>Canada's AI Ecosystem</h1>
+            <p>Exploring Canada's national AI strategy, key players, and innovations</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="canada-overview">
+            <div class="container">
+                <div class="overview-grid">
+                    <div class="overview-text">
+                        <h2>Canada: AI Pioneer Nation</h2>
+                        <p>Canada has established itself as a global leader in AI research and development, home to renowned researchers like Geoffrey Hinton and Yoshua Bengio. The country's strategic investments and collaborative approach have created a thriving AI ecosystem.</p>
+                        
+                        <div class="canada-highlights">
+                            <div class="highlight-item">
+                                <h4>$443M Investment</h4>
+                                <p>Pan-Canadian AI Strategy funding</p>
+                            </div>
+                            <div class="highlight-item">
+                                <h4>3 AI Superclusters</h4>
+                                <p>Montreal, Toronto, Edmonton</p>
+                            </div>
+                            <div class="highlight-item">
+                                <h4>650+ AI Companies</h4>
+                                <p>Across the country</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overview-media">
+                        <iframe width="100%" height="300" src="https://www.youtube.com/embed/aircAruvnKk" 
+                                title="AI in Canada" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ai-institutes">
+            <div class="container">
+                <h2>Canada's AI Research Institutes</h2>
+                <div class="institutes-grid">
+                    <div class="institute-card" onclick="showInstituteDetails('vector')">
+                        <div class="institute-logo">
+                            <div class="logo-placeholder">VI</div>
+                        </div>
+                        <h3>Vector Institute</h3>
+                        <p>Toronto-based AI research institute</p>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+                    
+                    <div class="institute-card" onclick="showInstituteDetails('mila')">
+                        <div class="institute-logo">
+                            <div class="logo-placeholder">MILA</div>
+                        </div>
+                        <h3>Mila</h3>
+                        <p>Quebec AI Institute</p>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+                    
+                    <div class="institute-card" onclick="showInstituteDetails('amii')">
+                        <div class="institute-logo">
+                            <div class="logo-placeholder">AMII</div>
+                        </div>
+                        <h3>AMII</h3>
+                        <p>Alberta Machine Intelligence Institute</p>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+                    
+                    <div class="institute-card" onclick="showInstituteDetails('cifar')">
+                        <div class="institute-logo">
+                            <div class="logo-placeholder">CIFAR</div>
+                        </div>
+                        <h3>CIFAR</h3>
+                        <p>Canadian Institute for Advanced Research</p>
+                        <button class="learn-more-btn">Learn More</button>
+                    </div>
+                </div>
+                
+                <div id="institute-details" class="institute-details-panel">
+                    <div class="details-content">
+                        <h3 id="details-title">Select an institute to learn more</h3>
+                        <p id="details-description">Click on any institute card above to view detailed information.</p>
+                        <div id="details-stats" class="details-stats"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="canadian-companies">
+            <div class="container">
+                <h2>Leading Canadian AI Companies</h2>
+                <div class="companies-showcase">
+                    <div class="company-slider">
+                        <div class="company-slide active">
+                            <div class="company-info">
+                                <h3>Shopify</h3>
+                                <p>E-commerce giant leveraging AI for personalized shopping experiences, fraud detection, and supply chain optimization.</p>
+                                <div class="company-stats">
+                                    <span>Founded: 2006</span>
+                                    <span>Employees: 10,000+</span>
+                                    <span>HQ: Ottawa</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="company-slide">
+                            <div class="company-info">
+                                <h3>Element AI</h3>
+                                <p>Montreal-based AI company focusing on enterprise AI solutions across various industries.</p>
+                                <div class="company-stats">
+                                    <span>Founded: 2016</span>
+                                    <span>Acquired: 2020</span>
+                                    <span>HQ: Montreal</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="company-slide">
+                            <div class="company-info">
+                                <h3>Cohere</h3>
+                                <p>Toronto-based NLP company developing large language models for enterprise applications.</p>
+                                <div class="company-stats">
+                                    <span>Founded: 2019</span>
+                                    <span>Funding: $270M</span>
+                                    <span>HQ: Toronto</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-controls">
+                        <button onclick="previousSlide()" class="slider-btn">❮</button>
+                        <button onclick="nextSlide()" class="slider-btn">❯</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pan-canadian-strategy">
+            <div class="container">
+                <h2>Pan-Canadian AI Strategy</h2>
+                <div class="strategy-content">
+                    <div class="strategy-text">
+                        <p>Launched in 2017, the Pan-Canadian Artificial Intelligence Strategy was the world's first national AI strategy. It aims to strengthen Canada's position as a global leader in AI research and talent development.</p>
+                        
+                        <div class="strategy-pillars">
+                            <div class="pillar">
+                                <div class="pillar-icon">🎓</div>
+                                <h4>Talent Development</h4>
+                                <p>Training the next generation of AI researchers</p>
+                            </div>
+                            <div class="pillar">
+                                <div class="pillar-icon">🔬</div>
+                                <h4>Research Excellence</h4>
+                                <p>Supporting world-class AI research</p>
+                            </div>
+                            <div class="pillar">
+                                <div class="pillar-icon">🤝</div>
+                                <h4>Collaboration</h4>
+                                <p>Building partnerships across sectors</p>
+                            </div>
+                            <div class="pillar">
+                                <div class="pillar-icon">⚖️</div>
+                                <h4>Responsible AI</h4>
+                                <p>Ensuring ethical AI development</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="strategy-funding">
+                        <h3>Investment Breakdown</h3>
+                        <div class="funding-chart">
+                            <div class="funding-item">
+                                <span class="funding-label">AI Institutes</span>
+                                <div class="funding-bar">
+                                    <div class="funding-fill" style="width: 70%">$125M</div>
+                                </div>
+                            </div>
+                            <div class="funding-item">
+                                <span class="funding-label">Talent Programs</span>
+                                <div class="funding-bar">
+                                    <div class="funding-fill" style="width: 60%">$86M</div>
+                                </div>
+                            </div>
+                            <div class="funding-item">
+                                <span class="funding-label">Research Chairs</span>
+                                <div class="funding-bar">
+                                    <div class="funding-fill" style="width: 50%">$40M</div>
+                                </div>
+                            </div>
+                            <div class="funding-item">
+                                <span class="funding-label">Global Leadership</span>
+                                <div class="funding-bar">
+                                    <div class="funding-fill" style="width: 40%">$35M</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ai-applications">
+            <div class="container">
+                <h2>AI Applications Across Canadian Industries</h2>
+                <div class="applications-grid">
+                    <div class="app-card healthcare" onclick="showApplicationDetails('healthcare')">
+                        <div class="app-icon">🏥</div>
+                        <h3>Healthcare</h3>
+                        <p>Medical imaging, drug discovery, patient monitoring</p>
+                    </div>
+                    <div class="app-card finance" onclick="showApplicationDetails('finance')">
+                        <div class="app-icon">💰</div>
+                        <h3>Finance</h3>
+                        <p>Fraud detection, algorithmic trading, risk assessment</p>
+                    </div>
+                    <div class="app-card agriculture" onclick="showApplicationDetails('agriculture')">
+                        <div class="app-icon">🌾</div>
+                        <h3>Agriculture</h3>
+                        <p>Precision farming, crop monitoring, yield optimization</p>
+                    </div>
+                    <div class="app-card transportation" onclick="showApplicationDetails('transportation')">
+                        <div class="app-icon">🚗</div>
+                        <h3>Transportation</h3>
+                        <p>Autonomous vehicles, traffic optimization, logistics</p>
+                    </div>
+                    <div class="app-card energy" onclick="showApplicationDetails('energy')">
+                        <div class="app-icon">⚡</div>
+                        <h3>Energy</h3>
+                        <p>Smart grids, renewable optimization, predictive maintenance</p>
+                    </div>
+                    <div class="app-card manufacturing" onclick="showApplicationDetails('manufacturing')">
+                        <div class="app-icon">🏭</div>
+                        <h3>Manufacturing</h3>
+                        <p>Quality control, predictive maintenance, supply chain</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ai-talent">
+            <div class="container">
+                <h2>Canadian AI Talent Pipeline</h2>
+                <div class="talent-overview">
+                    <div class="talent-stats">
+                        <div class="talent-card">
+                            <h3>15,000+</h3>
+                            <p>AI Professionals</p>
+                        </div>
+                        <div class="talent-card">
+                            <h3>50+</h3>
+                            <p>AI Research Programs</p>
+                        </div>
+                        <div class="talent-card">
+                            <h3>3,500+</h3>
+                            <p>Annual AI Graduates</p>
+                        </div>
+                        <div class="talent-card">
+                            <h3>85%</h3>
+                            <p>Retention Rate</p>
+                        </div>
+                    </div>
+                    
+                    <div class="talent-initiatives">
+                        <h3>Key Talent Initiatives</h3>
+                        <div class="initiatives-grid">
+                            <div class="initiative-item">
+                                <h4>CIFAR-AI Chairs</h4>
+                                <p>Attracting and retaining top AI researchers with $40M investment in research chairs across Canadian universities.</p>
+                            </div>
+                            <div class="initiative-item">
+                                <h4>AI4Good Lab</h4>
+                                <p>Training the next generation of AI researchers to tackle global challenges through responsible AI development.</p>
+                            </div>
+                            <div class="initiative-item">
+                                <h4>Industry Partnerships</h4>
+                                <p>Collaborative programs between universities and industry leaders to bridge the skills gap.</p>
+                            </div>
+                            <div class="initiative-item">
+                                <h4>Diversity & Inclusion</h4>
+                                <p>Programs focused on increasing representation of women and underrepresented groups in AI.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="regional-hubs">
+            <div class="container">
+                <h2>Regional AI Innovation Hubs</h2>
+                <div class="hubs-map">
+                    <div class="hub-selector">
+                        <button class="hub-btn active" onclick="showHubInfo('toronto')">Toronto</button>
+                        <button class="hub-btn" onclick="showHubInfo('montreal')">Montreal</button>
+                        <button class="hub-btn" onclick="showHubInfo('vancouver')">Vancouver</button>
+                        <button class="hub-btn" onclick="showHubInfo('edmonton')">Edmonton</button>
+                        <button class="hub-btn" onclick="showHubInfo('waterloo')">Waterloo</button>
+                    </div>
+                    
+                    <div id="toronto-hub" class="hub-info active">
+                        <h3>Toronto - Vector Institute Hub</h3>
+                        <div class="hub-details">
+                            <div class="hub-stats">
+                                <div class="stat-item">
+                                    <h4>250+</h4>
+                                    <p>AI Companies</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>$2.1B</h4>
+                                    <p>AI Investment</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>8,000+</h4>
+                                    <p>AI Jobs</p>
+                                </div>
+                            </div>
+                            <p>Toronto is Canada's largest AI hub, home to the Vector Institute and major tech companies. The city focuses on machine learning, deep learning, and AI applications in finance and healthcare.</p>
+                        </div>
+                    </div>
+                    
+                    <div id="montreal-hub" class="hub-info">
+                        <h3>Montreal - Mila Headquarters</h3>
+                        <div class="hub-details">
+                            <div class="hub-stats">
+                                <div class="stat-item">
+                                    <h4>200+</h4>
+                                    <p>AI Companies</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>$1.5B</h4>
+                                    <p>AI Investment</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>6,500+</h4>
+                                    <p>AI Jobs</p>
+                                </div>
+                            </div>
+                            <p>Montreal is the birthplace of deep learning, led by Yoshua Bengio and Mila. The city excels in fundamental AI research, gaming AI, and French-language AI applications.</p>
+                        </div>
+                    </div>
+                    
+                    <div id="vancouver-hub" class="hub-info">
+                        <h3>Vancouver - West Coast Innovation</h3>
+                        <div class="hub-details">
+                            <div class="hub-stats">
+                                <div class="stat-item">
+                                    <h4>150+</h4>
+                                    <p>AI Companies</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>$800M</h4>
+                                    <p>AI Investment</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>4,200+</h4>
+                                    <p>AI Jobs</p>
+                                </div>
+                            </div>
+                            <p>Vancouver leverages its proximity to Silicon Valley and strong university partnerships. The city focuses on AI applications in clean technology, forestry, and digital media.</p>
+                        </div>
+                    </div>
+                    
+                    <div id="edmonton-hub" class="hub-info">
+                        <h3>Edmonton - AMII Territory</h3>
+                        <div class="hub-details">
+                            <div class="hub-stats">
+                                <div class="stat-item">
+                                    <h4>80+</h4>
+                                    <p>AI Companies</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>$400M</h4>
+                                    <p>AI Investment</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>2,100+</h4>
+                                    <p>AI Jobs</p>
+                                </div>
+                            </div>
+                            <p>Edmonton is renowned for reinforcement learning research through AMII. The city applies AI to energy sector optimization, agriculture, and industrial automation.</p>
+                        </div>
+                    </div>
+                    
+                    <div id="waterloo-hub" class="hub-info">
+                        <h3>Waterloo - Innovation Corridor</h3>
+                        <div class="hub-details">
+                            <div class="hub-stats">
+                                <div class="stat-item">
+                                    <h4>120+</h4>
+                                    <p>AI Companies</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>$600M</h4>
+                                    <p>AI Investment</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h4>3,500+</h4>
+                                    <p>AI Jobs</p>
+                                </div>
+                            </div>
+                            <p>Waterloo combines strong academic research with entrepreneurial spirit. The region excels in AI applications for autonomous vehicles, quantum computing, and cybersecurity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="success-stories">
+            <div class="container">
+                <h2>Canadian AI Success Stories</h2>
+                <div class="stories-grid">
+                    <div class="story-card">
+                        <div class="story-icon">🧠</div>
+                        <h3>Geoffrey Hinton's Deep Learning</h3>
+                        <p>The "Godfather of AI" revolutionized machine learning with neural networks, leading to the modern AI boom. His work at University of Toronto laid the foundation for today's AI advances.</p>
+                        <div class="story-impact">Impact: Enabled modern AI applications worldwide</div>
+                    </div>
+                    
+                    <div class="story-card">
+                        <div class="story-icon">🎮</div>
+                        <h3>OpenAI Five & Dota 2</h3>
+                        <p>Canadian researchers contributed to AI systems that mastered complex strategy games, demonstrating AI's ability to handle multi-agent environments and long-term planning.</p>
+                        <div class="story-impact">Impact: Advanced reinforcement learning techniques</div>
+                    </div>
+                    
+                    <div class="story-card">
+                        <div class="story-icon">🏥</div>
+                        <h3>AI-Powered COVID Response</h3>
+                        <p>Canadian AI companies developed contact tracing apps, diagnostic tools, and vaccine distribution optimization systems during the pandemic.</p>
+                        <div class="story-impact">Impact: Saved lives through rapid AI deployment</div>
+                    </div>
+                    
+                    <div class="story-card">
+                        <div class="story-icon">🌍</div>
+                        <h3>Climate Change AI</h3>
+                        <p>Canadian researchers lead global initiatives using AI to combat climate change, from optimizing renewable energy to monitoring deforestation.</p>
+                        <div class="story-impact">Impact: Environmental protection at scale</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="canada-quiz">
+            <div class="container">
+                <h2>Test Your Canada AI Knowledge</h2>
+                <div class="quiz-container">
+                    <div id="canada-quiz">
+                        <p id="canada-question">Which city is home to the Vector Institute?</p>
+                        <div class="quiz-options">
+                            <button class="quiz-btn" onclick="checkCanadaAnswer(this, true)">Toronto</button>
+                            <button class="quiz-btn" onclick="checkCanadaAnswer(this, false)">Montreal</button>
+                            <button class="quiz-btn" onclick="checkCanadaAnswer(this, false)">Vancouver</button>
+                        </div>
+                        <div id="canada-quiz-result"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 AI Trends Explorer | Gurpreet Kaur - 816321 | Educational Project</p>
+            <div class="footer-nav">
+                <a href="global.html">Previous: Global Trends</a>
+                <a href="future.html">Next: Future & Ethics</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Additional JavaScript for Canada page specific functionality
+        function showHubInfo(hub) {
+            // Hide all hub info
+            document.querySelectorAll('.hub-info').forEach(info => {
+                info.classList.remove('active');
+            });
+            
+            // Remove active class from all buttons
+            document.querySelectorAll('.hub-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected hub info
+            const hubInfo = document.getElementById(`${hub}-hub`);
+            if (hubInfo) {
+                hubInfo.classList.add('active');
+            }
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
+        }
+
+        function checkCanadaAnswer(button, isCorrect) {
+            const buttons = button.parentElement.querySelectorAll('.quiz-btn');
+            const resultDiv = document.getElementById('canada-quiz-result');
+            
+            buttons.forEach(btn => {
+                btn.disabled = true;
+                if (btn === button) {
+                    if (isCorrect) {
+                        btn.classList.add('correct');
+                        resultDiv.innerHTML = '<p style="color: #28a745; font-weight: bold;">✓ Correct! Toronto is home to the Vector Institute.</p>';
+                    } else {
+                        btn.classList.add('incorrect');
+                        resultDiv.innerHTML = '<p style="color: #dc3545; font-weight: bold;">✗ Incorrect. Toronto is home to the Vector Institute.</p>';
+                    }
+                }
+            });
+            
+            setTimeout(() => {
+                buttons.forEach(btn => {
+                    btn.disabled = false;
+                    btn.classList.remove('correct', 'incorrect');
+                });
+                resultDiv.innerHTML = '';
+                
+                // Load next question
+                const questions = [
+                    {
+                        question: "What was the investment amount for the Pan-Canadian AI Strategy?",
+                        options: ["$443 Million", "$500 Million", "$350 Million"],
+                        correct: 0
+                    },
+                    {
+                        question: "Which researcher is known as the 'Godfather of AI'?",
+                        options: ["Yoshua Bengio", "Geoffrey Hinton", "Yann LeCun"],
+                        correct: 1
+                    }
+                ];
+                
+                const currentQuestion = Math.floor(Math.random() * questions.length);
+                const questionData = questions[currentQuestion];
+                
+                document.getElementById('canada-question').textContent = questionData.question;
+                buttons.forEach((btn, index) => {
+                    btn.textContent = questionData.options[index];
+                    btn.onclick = () => checkCanadaAnswer(btn, index === questionData.correct);
+                });
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
